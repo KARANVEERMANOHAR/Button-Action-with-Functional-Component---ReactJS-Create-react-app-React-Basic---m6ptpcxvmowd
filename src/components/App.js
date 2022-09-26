@@ -4,7 +4,11 @@ import "./../styles/App.css";
 function App() {
   const [para, setPara] = useState(false);
   const showData = () => {
-    setPara(true);
+    if (para === true) {
+      setPara(false);
+    } else {
+      setPara(true);
+    }
   };
   return (
     <div id="main">
